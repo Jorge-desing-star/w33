@@ -1,0 +1,226 @@
+:root{
+    --main-color: #9c99dd;
+    --second-color:#c092c4;
+    --third-color: #BBCFFF;
+    --white-color: white;
+    --black-color: black;
+    --grey-color: grey;
+}
+
+body{
+    background-color: var(--third-color);
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: margin-left 0.5s;
+}
+.container{ /*cajita donde estamos metiendo nuestro menu*/
+    width:100%; /*ancho de mi menu*/
+    padding: 0 10px;
+    margin: 0 auto;
+    background-color: var(--main-color);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px; /*distancia entre el texto y la caja que lo contiene*/
+    padding-top: 1px;
+    height: 120px; /*altura de mi menu*/
+    
+  }
+.nav_links_list{
+    list-style-type: none;
+    display: flex;
+    gap: 0px 20px;
+    font-family: poppins;
+    font-size: 18px;
+    padding-right: 20px;
+    color: var(--second-color);
+    text-transform: uppercase; /*pone en mayusculas el texto*/
+}
+.nav_links_list a{
+    padding-right: 200px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}  
+
+.nav_logos{
+
+    width: 100px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-left: 2%;
+    border-radius: 10%;
+}
+
+.about{
+    background-color: var(--second-color);
+    color: white;
+    padding-left: 30px;
+    grid-template-columns: auto auto;
+    display:flex;
+}
+.about img{
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px;
+    margin: 10px;
+}
+.about .text{
+    padding-left: 90px;
+    padding-top: 12%;
+    padding-right: 20%;
+}
+
+.servicios h3{
+    text-align: center;
+    color: var(--main-color);
+    font-size: 30px;
+    margin-top: 10px;
+
+}
+
+.servicios p{
+    text-align: center;
+    color: var(--grey-color);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.servicios{
+    background-color: var(--main-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.servicios .items{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-left: 10px;
+    height: 200px;
+    flex: 1;
+    transition: .3s;
+    padding: 3px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.servicios .items:hover{
+    transform: scale(1.1);
+    flex: 2;
+}
+
+.contacto{
+    background-color: var(--main-color);
+    color: var(--white-color);
+    grid-template-columns: auto auto;
+    display: grid;
+    gap: 20px;
+    padding:  5% 20px;
+    border-radius: 10px;
+
+}
+.contacto .input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    width: 90%;
+}
+.contacto label{
+    font-size: 20px;
+    display: block;
+    padding-top: 15px;
+}
+
+.contacto textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    display: block;
+    width: 90%;
+}
+
+.contacto .btn{
+    background-color: var(--main-color);
+    color: var(--white-color);
+    padding: 10px;
+    padding-top: 40%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    position: block;
+}
+.contacto  .btn:hover{
+    background-color: var(--second-color);
+    position: grid;
+}
+
+
+
+.sidebar{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #cf9d9d;
+    color: white;
+    padding-top: 20px;
+    transition: left 0.5s;
+}
+
+.sidebar h2{
+    text-align: center;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li{
+    padding: 8px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.sidebar ul li a:hover {
+    background-color: #e4b4b4;
+}
+.sidebar.active{
+    left:0;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+button {
+    position:fixed;
+    top: 10px;
+    right: 10px;
+    padding: 12px;
+    background-color: #948888;
+    border-radius: 20px;
+    line-gap-override: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cf9d9d;
+}
