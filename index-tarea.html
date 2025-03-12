@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/Css/tarea.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.7.2-web/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container">
+        <nav class="nav">
+            <div class="nav_logos">
+                <img class="nav_logos" src="assets/images/jorge.jpeg" alt="">
+            </div>
+            <div class="nav_links">
+                <ul class="nav_links_list">
+                  <li class="nav_link"><a href="index.html">Saber de la empresa</a></li>
+                  
+                </ul>
+              </div>
+        </nav>
+    </header>
+
+    <section class="about">
+        <div>
+            <img src="assets/images/empresa.jpeg" alt="_self">
+        </div>
+        <div class="text">
+            <h2> De que trata nuestra empresa?</h2>
+            <p> En nuestra empresa se especializa en hacer una simple idea en un gran producto para el cliente</p>
+
+            <ul>
+                <li><i class="fa-solid fa-palette fa-flip"></i> Creatividad</li>
+                <li> <i class="fa-solid fa-font-awesome fa-fade"></i> Perseverancia</li>
+                <li><i class="fa-solid fa-wand-magic-sparkles fa-beat"></i> Innovacion</li>
+                <li> <i class="fa-brands fa-github fa-beat-fade"></i> Profesionalismo</li>
+            </ul>
+
+        </div>
+
+    </section>
+    <div class="sidebar" id="sidebar">
+        <h2>barra lateral</h2>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+
+    <section class="servicios">
+        <card class="items">
+            <img src="assets/images/im1.jpeg" alt="fotografia" class="image">
+            <h3 class="center"> Fotografia</h3>
+            <p class="center"> Capturamos tus mejores ideas y la convertimos en la mejor opcion para ti</p>
+        </card>
+        <card class="items">
+            <img src="assets/images/img2.jpeg" alt="diseño" class="image">
+            <h3 class="center"> Diseño</h3>
+            <p class="center">Hacemos realidad tus ideales de una forma especial para ti</p>
+        </card>
+        <card class="items">
+            <img src="assets/images/img3.jpeg" alt="marketing" class="image">
+            <h3 class="center"> Marketing</h3>
+            <p class="cemter">Tu negocio ahora sera reconocido dentro de la industria de la tecnologia gracias a nosotros </p>
+        </card>
+    </section>
+
+    <section class="contacto">
+    <div class="contacto_text">
+      <h2> <i class="fa-solid fa-mobile-screen fa-shake"></i> Contactanos</h2>
+      <p>Si tines allguna duda o consulta, no dudes en contactarnos</p>
+    </div>
+    <div class="contacto_form">
+      <form action="#" method="post" name="contacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+  
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Email" required>
+  
+        <label for="Mensaje"> Mensaje</label>
+        <textarea type="mensaje" placeholder="Mensaje" required></textarea>
+        <button type="submit"> Enviar</button>
+        
+      </form>
+
+    </section>
+
+<br>
+<br>
+    <button onclick="toggleSidebar()"> = </button>
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+
+</section>
+<script src="https://kit.fontawesome.com/cbae8c5966.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
